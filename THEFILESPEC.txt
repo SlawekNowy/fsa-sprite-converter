@@ -1,0 +1,11 @@
+sprite data:
+each byte is two palette entries, in reversed order
+
+00 00 BB DC
+
+is ACTUALLY the palette entries
+
+0 0 0 0 B B C D
+
+From the start of the file the data is organised in 8x8 pixel chunks
+The first 32 bytes are the first 8x8 pixel block, then the next 32 bytes are the 8x8 block to the immediate right
